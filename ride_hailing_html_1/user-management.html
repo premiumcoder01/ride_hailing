@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management | Trihp</title>
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" type="text/css"/> -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" type="text/css"/>    
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <section id="wrapper" class="wrapper">
+        <div class="sidenav text-center">
+            <div class="logo">
+                <a href="#"><img src="assets/images/login-logo.png" alt="" class="img-fluid"/></a>
+            </div>
+            <nav>
+                <ul class="list-unstyled m-0 p-0">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/home-icon.svg"/> Dashboard
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <img src="assets/images/icons/user-icon.svg"/> User Management
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Drivers</a>
+                            </li>
+                            <li>
+                                <a href="#">Driver Onboarding</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/postal-address-icon.svg"/> Driver Management
+                        </a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Drivers</a>
+                            </li>
+                            <li>
+                                <a href="#">Driver Onboarding</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/trip-management-icon.svg"/> Trip Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/key-icon.svg"/> Owner Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/support-icon.svg"/> Support Management
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/reporting-icon.svg"/> Reporting
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/insight-icon.svg"/> Insights
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/payment-commision-icon.svg"/> Payment & Commisions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/payment-commision-icon.svg"/>Promotions & Marketing 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/email-setting-icon.svg"/> Email Setting
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/send-email-icon.svg"/> Send Email
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/setting-icon.svg"/> Setting
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/icons/logout-icon.svg"/> Logout
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <section class="content-area">
+            <section class="titlebar mb-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                           <div class="headerWrap d-flex align-items-center justify-content-between">
+                                <h1>User Management</h1>
+                                <div class="profile-area">
+                                    <ul class="list-unstyled m-0 p-0 d-flex align-items-center">
+                                        <li class="messages">
+                                            <a href="#"><img src="assets/images/chat-icon.svg" alt="" class="card-icon"/></a>
+                                        </li>
+                                        <li class="notification">
+                                            <a href="#" class="position-relative"><img src="assets/images/notification-icon.svg" alt="" class="card-icon"/></a>
+                                        </li>
+                                        <li class="profile-box">
+                                            <div class="imgBox online">
+                                                <img src="assets/images/profile-pic.png" alt="" class="img-fluid"/>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="main-content" class="main-content">
+                <div class="container-fluid">
+                    <div class="row mt-5">
+                        <div class="col-12 d-flex justify-content-between">
+                            <div class="button-group btn-management">
+                                <button type="button" class="btn btn-secondary active">All Time</button>
+                                <button type="button" class="btn btn-secondary">Weekly</button>
+                                <button type="button" class="btn btn-secondary">Monthly</button>
+                                <button type="button" class="btn btn-secondary">Yearly</button>
+                            </div>
+                            
+                            <!-- <div class="search-container">
+                                <form action="/search" method="get">
+                                  <input class="search expandright" id="searchright" type="search" name="" placeholder="Search">
+                                  <label class="button searchbutton" for="searchright">
+                                        <span class="mglass">
+                                            <img src="assets/images/icons/search-icon.svg" alt=""/>
+                                        </span>
+                                    </label>
+                                </form>
+                            </div> -->
+                            <div class="ml-auto d-flex">
+                                <div class="search-box">
+                                    <input type="text" placeholder="Search here..."/>
+                                    <button type="button" class="search-btn"><img src="assets/images/icons/search-icon.svg" alt="" class="img-fluid"/></button>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="row mt-0 gy-4">
+                       <div class="col-12 user-list-data">
+                            <div class="table-responsive box-shadow radius-10">
+                                <table  class="w-100  table table-border-last-none table-custom text-center m-0">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 88px;">S.No</th>
+                                            <th>Name</th>
+                                            <th>ID</th>
+                                            <th>Vehicle ID</th>
+                                            <th>Phone</th>
+                                            <th>Rides</th>
+                                            <th>Spent</th>
+                                            <th>Rating</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>Username</td>
+                                            <td class="text-primary"><a href="">#237258</a></td>
+                                            <td class="text-primary"><a href="">#675946</a></td>
+                                            <td>9397594609</td>
+                                            <td>100</td>
+                                            <td>$500</td>
+                                            <td>5.0</td>
+                                            <td class="text-green"><a href="#">Active</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>Username</td>
+                                            <td class="text-primary"><a href="">#237258</a></td>
+                                            <td class="text-primary"><a href="">#675946</a></td>
+                                            <td>9397594609</td>
+                                            <td>100</td>
+                                            <td>$500</td>
+                                            <td>5.0</td>
+                                            <td class="text-grey"><a href="#">Inactive</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>Username</td>
+                                            <td class="text-primary">#237258</td>
+                                            <td class="text-primary">#675946</td>
+                                            <td>9397594609</td>
+                                            <td>100</td>
+                                            <td>$500</td>
+                                            <td>5.0</td>
+                                            <td class="text-green">Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>Username</td>
+                                            <td class="text-primary"><a href="">#237258</a></td>
+                                            <td class="text-primary"><a href="">#675946</a></td>
+                                            <td>9397594609</td>
+                                            <td>100</td>
+                                            <td>$500</td>
+                                            <td>5.0</td>
+                                            <td class="text-grey"><a href="#">Inactive</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>Username</td>
+                                            <td class="text-primary">#237258</td>
+                                            <td class="text-primary">#675946</td>
+                                            <td>9397594609</td>
+                                            <td>100</td>
+                                            <td>$500</td>
+                                            <td>5.0</td>
+                                            <td class="text-green">Active</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06</td>
+                                            <td>Username</td>
+                                            <td class="text-primary"><a href="">#237258</a></td>
+                                            <td class="text-primary"><a href="">#675946</a></td>
+                                            <td>9397594609</td>
+                                            <td>100</td>
+                                            <td>$500</td>
+                                            <td>5.0</td>
+                                            <td class="text-grey"><a href="#">Inactive</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>07</td>
+                                            <td>Username</td>
+                                            <td class="text-primary">#237258</td>
+                                            <td class="text-primary">#675946</td>
+                                            <td>9397594609</td>
+                                            <td>100</td>
+                                            <td>$500</td>
+                                            <td>5.0</td>
+                                            <td class="text-green">Active</td>
+                                        </tr>                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <ul class="list-unstyled p-0 pagination mt-4">
+                                <li><a href="#" class="prev-link">Prev</a></li>
+                                <li><a href="#" class="next-link">Next</a></li>
+                            </ul>
+                       </div>
+                    </div>
+                </div>
+            </section>        
+        </section>
+        <section id="footer" class="footer py-4">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="copyright m-0">all rights reserved by ECEETECH Softwares</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
