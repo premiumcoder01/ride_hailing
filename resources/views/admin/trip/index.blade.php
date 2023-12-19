@@ -33,8 +33,8 @@
                             @for($i=1;$i<=10;$i++)
                             <tr>
                                 <td>{{$i}}</td>
-                                <td class="text-primary"><a href="{{route('admin.owner-management.detail')}}">#{{$i}}</a></td>
-                                <td class="text-primary"><a href="">#675946</a></td>
+                                <td class="text-primary"><a href="{{route('admin.trip-management.tripDetail')}}">#{{$i}}</a></td>
+                                <td class="text-primary"><a href="{{route('admin.user-management.user.indexOnboarding')}}">#675946</a></td>
                                 <td>Driver Name</td>
                                 <td>Rider Name</td>
                                 <td>$500</td>

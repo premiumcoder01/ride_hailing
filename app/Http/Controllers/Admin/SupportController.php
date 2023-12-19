@@ -15,4 +15,15 @@ class SupportController extends Controller {
     public function detail(){
         return view('admin.support.detail');
     }
+    public function faq(){
+        // dd('ffff');
+      return view('admin.support.faq');
+     }
+    public function article(){
+    // dd('ffff');
+    return view('admin.support.article');
+    }
+    public function reportAnalytics(){
+        return view('admin.support.report_analytics');
+    }
 }
