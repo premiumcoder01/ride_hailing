@@ -25,6 +25,22 @@
         $header_value = 'Email Settings';
     }elseif(str_contains($page_url,'send-email-management')){
         $header_value = 'SMS';
+    }elseif(str_contains($page_url,'support-policies')){
+        $header_value = 'Support Policies and Guide';
+    }elseif(str_contains($page_url,'reporting-and-analytics')){
+        $header_value = 'Reporting And Analytics';
+    }elseif(str_contains($page_url,'push-notification')){
+        $header_value = 'Push Notification';
+    }elseif(str_contains($page_url,'ticket-report')){
+        $header_value = 'Ticket Reports';
+    }elseif(str_contains($page_url,'manage-article')){
+        $header_value = 'Article';
+    }elseif(str_contains($page_url,'feedback-surveys')){
+        $header_value = 'Feedback and Survays';
+    }elseif(str_contains($page_url,'faq')){
+        $header_value = 'Faq';
+    }elseif(str_contains($page_url,'faq-list')){
+        $header_value = 'Faq';
     }else{
         $header_value = 'Dashboard';
     }
