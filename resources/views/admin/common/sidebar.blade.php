@@ -13,17 +13,9 @@
                 </a>
             </li>
             <li class="{{str_contains($page_url,'user-management') ? 'active' : ''}}">
-                <a href="#">
+                <a href="{{route('admin.user-management.user.index')}}">
                     <img src="{{asset('admin/assets/images/icons/user-icon.svg')}}"/> User Management
                 </a>
-                <ul class="submenu" style="{{str_contains($page_url,'user-management') ? 'display:block;' : 'display:none'}}">
-                    <li class="{{str_contains($page_url,'user-management/user/') ? 'active' : ''}}">
-                        <a href="{{route('admin.user-management.user.index')}}">Users</a>
-                    </li>
-                    <li class="{{str_contains($page_url,'user-management/user-onboarding/') ? 'active' : ''}}">
-                        <a href="{{route('admin.user-management.user.indexOnboarding')}}">User Onboarding</a>
-                    </li>
-                </ul>
             </li>
             <li class="{{str_contains($page_url,'driver-management') ? 'active' : ''}}">
                 <a href="#">
@@ -52,12 +44,25 @@
 
 
 
-
-
             <li class="{{str_contains($page_url,'support-management') ? 'active' : ''}}">
-                <a href="{{route('admin.support-management.index')}}">
+                <a href="#">
                     <img src="{{asset('admin/assets/images/icons/support-icon.svg')}}"/> Support Management
                 </a>
+                <ul class="submenu" style="{{str_contains($page_url,'support-management') ? 'display:block;' : 'display:none'}}">
+                
+                    <li class="{{str_contains($page_url,'support-managementtikets') ? 'active' : ''}}">
+                        <a href="{{route('admin.support-management.index')}}">Tickets</a>
+                    </li>
+                    <li class="{{str_contains($page_url,'support-management/faq') ? 'active' : ''}}">
+                        <a href="{{route('admin.support-management.faq')}}">Faq</a>
+                    </li>
+                    <li class="{{str_contains($page_url,'support-management/article') ? 'active' : ''}}">
+                        <a href="{{route('admin.support-management.article')}}">Article</a>
+                    </li>
+                    <li class="{{str_contains($page_url,'support-management/report-analytics') ? 'active' : ''}}">
+                        <a href="{{route('admin.support-management.reportAnalytics')}}">Report & Analytics</a>
+                    </li>
+                </ul>
             </li>
             <li class="{{str_contains($page_url,'report-management') ? 'active' : ''}}">
                 <a href="{{route('admin.report-management.index')}}">
@@ -70,7 +75,8 @@
                 </a>
             </li>
             <li class="{{str_contains($page_url,'payment-management') ? 'active' : ''}}">
-                <a href="{{route('admin.payment-management.index')}}">
+                <!-- <a href="{{route('admin.payment-management.index')}}"> -->
+                <a href="{{route('admin.insight-management.index')}}">
                     <img src="{{asset('admin/assets/images/icons/payment-commision-icon.svg')}}"/> Payment & Commisions
                 </a>
             </li>
@@ -94,30 +100,26 @@
                     <img src="{{asset('admin/assets/images/icons/setting-icon.svg')}}"/> Setting
                 </a>
                 <ul class="submenu" style="{{str_contains($page_url,'setting') ? 'display:block;' : 'display:none'}}">
-                    <li class="{{str_contains($page_url,'setting/support-policies/') ? 'active' : ''}}">
-                        <a href="{{route('admin.setting-management.supportPolicies')}}">Support Policies</a>
+                
+                <li class="{{str_contains($page_url,'support-management/index') ? 'active' : ''}}">
+                        <a href="{{route('admin.support-management.index')}}">Tickets</a>
                     </li>
-                    <li class="{{str_contains($page_url,'setting/reporting-and-analytics/') ? 'active' : ''}}">
-                        <a href="{{route('admin.setting-management.reportingAndAnalytics')}}">Reporting And Analytics</a>
+                    <li class="{{str_contains($page_url,'setting-management/create-ride') ? 'active' : ''}}">
+                        <a href="{{route('admin.setting-management.createRide')}}">Create Ride</a>
                     </li>
-                    <li class="{{str_contains($page_url,'setting/push-notification/') ? 'active' : ''}}">
+                    <li class="{{str_contains($page_url,'setting-management/sms') ? 'active' : ''}}">
+                        <a href="{{route('admin.setting-management.sms')}}">SMS</a>
+                    </li>
+                    <li class="{{str_contains($page_url,'setting-management/promotions/') ? 'active' : ''}}">
+                        <a href="{{route('admin.setting-management.promotions')}}">Promotions</a>
+                    </li>
+                    <li class="{{str_contains($page_url,'setting-management/payment-commissions/') ? 'active' : ''}}">
+                        <a href="{{route('admin.setting-management.paymentCommissions')}}">Payment & Commissions</a>
+                    </li>
+                    <li class="{{str_contains($page_url,'setting-management/push-notification/') ? 'active' : ''}}">
                         <a href="{{route('admin.setting-management.pushNotification')}}">Push Notification</a>
                     </li>
-                    <li class="{{str_contains($page_url,'setting/ticket-report/') ? 'active' : ''}}">
-                        <a href="{{route('admin.setting-management.ticketReport')}}">Ticket Reports</a>
-                    </li>
-                    <li class="{{str_contains($page_url,'setting/manage-article/') ? 'active' : ''}}">
-                        <a href="{{route('admin.setting-management.manageArticle')}}">Manage Article</a>
-                    </li>
-                    <li class="{{str_contains($page_url,'setting/feedback-surveys/') ? 'active' : ''}}">
-                        <a href="{{route('admin.setting-management.feedbackSurveys')}}">Feedback Surveys</a>
-                    </li>
-                    <li class="{{str_contains($page_url,'setting/faq/') ? 'active' : ''}}">
-                        <a href="{{route('admin.setting-management.faq')}}">Faq</a>
-                    </li>
-                    <li class="{{str_contains($page_url,'setting/faq-list/') ? 'active' : ''}}">
-                        <a href="{{route('admin.setting-management.faqList')}}">Faq List</a>
-                    </li>
+                  
                 </ul>
             </li>
             <li>

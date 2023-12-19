@@ -48,6 +48,7 @@ Route::post('/post-admin',[AdminLoginController::class,'postLogin'])->name('admi
     Route::prefix('trip-management')->name('trip-management.')->group(function () {
         Route::get('index',[AdminTripController::class,'index'])->name('index');
         Route::get('detail',[AdminTripController::class,'detail'])->name('detail');
+        Route::get('trip-details',[AdminTripController::class,'tripDetail'])->name('tripDetail');
         
     });
     Route::prefix('owner-management')->name('owner-management.')->group(function () {
@@ -57,6 +58,9 @@ Route::post('/post-admin',[AdminLoginController::class,'postLogin'])->name('admi
     Route::prefix('support-management')->name('support-management.')->group(function () {
         Route::get('index',[AdminSupportController::class,'index'])->name('index');
         Route::get('detail',[AdminSupportController::class,'detail'])->name('detail');
+        Route::get('faq',[AdminSupportController::class,'faq'])->name('faq');
+        Route::get('article',[AdminSupportController::class,'article'])->name('article');
+        Route::get('report-analytics',[AdminSupportController::class,'reportAnalytics'])->name('reportAnalytics');
     });
     Route::prefix('report-management')->name('report-management.')->group(function () {
         Route::get('index',[AdminReportController::class,'index'])->name('index');
@@ -79,16 +83,24 @@ Route::post('/post-admin',[AdminLoginController::class,'postLogin'])->name('admi
         Route::get('index',[AdminSendEmailController::class,'index'])->name('index');
     });
     Route::prefix('setting-management')->name('setting-management.')->group(function () {
-        Route::get('setting/support-policies',[AdminSettingController::class,'supportPolicies'])->name('supportPolicies');
-        Route::get('setting/reporting-and-analytics',[AdminSettingController::class,'reportingAndAnalytics'])->name('reportingAndAnalytics');
-        Route::get('setting/push-notification',[AdminSettingController::class,'pushNotification'])->name('pushNotification');
-        Route::get('setting/ticket-report',[AdminSettingController::class,'ticketReport'])->name('ticketReport');
-        Route::get('setting/manage-article',[AdminSettingController::class,'manageArticle'])->name('manageArticle');
-        Route::get('setting/feedback-surveys',[AdminSettingController::class,'feedbackSurveys'])->name('feedbackSurveys');
-        Route::get('setting/faq',[AdminSettingController::class,'faq'])->name('faq');
-        Route::get('setting/faq-list',[AdminSettingController::class,'faqList'])->name('faqList');
+        Route::get('create-ride',[AdminSettingController::class,'createRide'])->name('createRide');
+        Route::get('create-ride-loder',[AdminSettingController::class,'createRideLoder'])->name('createRideLoder');
+        Route::get('sms',[AdminSettingController::class,'sms'])->name('sms');
+        Route::get('promotions',[AdminSettingController::class,'promotions'])->name('promotions');
+        Route::get('payment-commissions',[AdminSettingController::class,'paymentCommissions'])->name('paymentCommissions');
+        Route::get('push-notification',[AdminSettingController::class,'pushNotification'])->name('pushNotification');
+        Route::get('feedback-surveys',[AdminSettingController::class,'feedbackSurveys'])->name('feedbackSurveys');
+        Route::get('faq-list',[AdminSettingController::class,'faqList'])->name('faqList');
 
 
     });
+    // Route::get('support-policies',[AdminSettingController::class,'supportPolicies'])->name('supportPolicies');
+    // Route::get('reporting-and-analytics',[AdminSettingController::class,'reportingAndAnalytics'])->name('reportingAndAnalytics');
+    // Route::get('push-notification',[AdminSettingController::class,'pushNotification'])->name('pushNotification');
+    // Route::get('ticket-report',[AdminSettingController::class,'ticketReport'])->name('ticketReport');
+    // Route::get('manage-article',[AdminSettingController::class,'manageArticle'])->name('manageArticle');
+    // Route::get('feedback-surveys',[AdminSettingController::class,'feedbackSurveys'])->name('feedbackSurveys');
+    // Route::get('faq',[AdminSettingController::class,'faq'])->name('faq');
+    // Route::get('faq-list',[AdminSettingController::class,'faqList'])->name('faqList');
 
 });

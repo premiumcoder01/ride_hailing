@@ -37,8 +37,8 @@
                         <tr>
                             <td>{{$i}}</td>
                             <td>Username</td>
-                            <td class="text-primary"><a href="">#237258</a></td>
-                            <td class="text-primary"><a href="">#675946</a></td>
+                            <td class="text-primary"><a href="{{route('admin.driver-management.driver.detail')}}">#237258</a></td>
+                            <td class="text-primary"><a href="{{route('admin.user-management.user.indexOnboarding')}}">#675946</a></td>
                             <td>9397594609</td>
                             <td>100</td>
                             <td>$500</td>

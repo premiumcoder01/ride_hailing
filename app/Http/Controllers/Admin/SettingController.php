@@ -10,34 +10,32 @@ use App\Models\User;
 
 class SettingController extends Controller { 
 
-    public function supportPolicies(){
-        return view('admin.setting.support_policies');
+    public function createRide(){
+        // dd('fff');
+        return view('admin.setting.create_ride');
     }
-    public function reportingAndAnalytics(){
+    public function createRideLoder(){
 
         
-        return view('admin.setting.reporting_and_analytics');
+        return view('admin.setting.create_ride_loder');
     }
     public function pushNotification(){
        
         return view('admin.setting.push_notification');
     }
-    public function ticketReport(){
+    public function sms(){
         //   dd('ffff');
-        return view('admin.setting.ticket_report');
+        return view('admin.setting.sms');
     }
-    public function manageArticle(){
+    public function promotions(){
         // dd('ffff');
-      return view('admin.setting.manage_articlet');
+      return view('admin.setting.promotions');
      }
-    public function feedbackSurveys(){
+    public function paymentCommissions(){
         // dd('ffff');
-    return view('admin.setting.feedback_surveys');
+    return view('admin.setting.payment_commissions');
     }
-    public function faq(){
-        // dd('ffff');
-      return view('admin.setting.faq');
-     }
+    
     public function faqList(){
         // dd('ffff');
     return view('admin.setting.faq_list');

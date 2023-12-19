@@ -16,4 +16,7 @@ class TripController extends Controller {
     public function detail(){
         return view('admin.trip.detail');
     }
+    public function tripDetail(){
+        return view('admin.trip.trip_details');
+    }
 }

@@ -11,36 +11,44 @@
         $header_value = 'Trip Management';
     }elseif(str_contains($page_url,'owner-management')){
         $header_value = 'Owner Management';
-    }elseif(str_contains($page_url,'support-management')){
+    }elseif(str_contains($page_url,'support-management/index')){
         $header_value = 'Support Management';
     }elseif(str_contains($page_url,'insight-management')){
         $header_value = 'Insight';
     }elseif(str_contains($page_url,'payment-management')){
         $header_value = 'Payment Method';
-    }elseif(str_contains($page_url,'report-management')){
+    }elseif(str_contains($page_url,'report-management')){   
         $header_value = 'Reporting';
     }elseif(str_contains($page_url,'promotion-management')){
-        $header_value = 'Promotions';
+        $header_value = 'Insights';
     }elseif(str_contains($page_url,'email-setting-management')){
         $header_value = 'Email Settings';
     }elseif(str_contains($page_url,'send-email-management')){
+        $header_value = 'Send Email';
+    }elseif(str_contains($page_url,'create-ride')){
+        $header_value = 'Create Ride';
+    }elseif(str_contains($page_url,'payment-commissions')){
+        $header_value = 'Payment Method';
+    }elseif(str_contains($page_url,'sms')){
         $header_value = 'SMS';
-    }elseif(str_contains($page_url,'support-policies')){
-        $header_value = 'Support Policies and Guide';
-    }elseif(str_contains($page_url,'reporting-and-analytics')){
-        $header_value = 'Reporting And Analytics';
     }elseif(str_contains($page_url,'push-notification')){
         $header_value = 'Push Notification';
-    }elseif(str_contains($page_url,'ticket-report')){
-        $header_value = 'Ticket Reports';
-    }elseif(str_contains($page_url,'manage-article')){
-        $header_value = 'Article';
+    }elseif(str_contains($page_url,'promotions')){
+        $header_value = 'Promotions';
+    // }elseif(str_contains($page_url,'manage-article')){
+    //     $header_value = 'Article';
     }elseif(str_contains($page_url,'feedback-surveys')){
         $header_value = 'Feedback and Survays';
     }elseif(str_contains($page_url,'faq')){
         $header_value = 'Faq';
     }elseif(str_contains($page_url,'faq-list')){
         $header_value = 'Faq';
+    }elseif(str_contains($page_url,'article')){
+        $header_value = 'Article';
+    }elseif(str_contains($page_url,'report-management/index')){
+        $header_value = 'Report and Analytics';
+    }elseif(str_contains($page_url,'report-management/index')){
+        $header_value = 'Reporting';
     }else{
         $header_value = 'Dashboard';
     }

@@ -2,37 +2,82 @@
 @section('content')
 <section id="main-content" class="main-content">
     <div class="container-fluid">                   
-        <div class="row">
-            <div class="col-12 user-list-data mt-4">
-                <div class="table-responsive box-shadow radius-10 email-setting-list">
-                    <table  class="w-100 table table-border-last-none table-custom text-center m-0">
-                        <thead>
-                            <tr>
-                                <th>Host Name</th>
-                                <th>Port</th>
-                                <th>Sender Email</th>                                            
-                                <th>Action</th>
-                                <th>&nbsp;</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @for($i=1;$i<=5;$i++)
-                            <tr>
-                                <td>Rider</td>
-                                <td>745739</td>
-                                <td>01/12/27 to 30/12/27</a></td>    
-                                <td>
-                                    <a href="{{route('admin.email-setting-management.edit')}}" class="edit-icon mx-2"><img src="{{asset('admin/assets/images/icons/edit-icon.svg')}}" alt=""/></a>
-                                    <a href="#" class="del-icon mx-2"><img src="{{asset('admin/assets/images/icons/del-icon.svg')}}" alt=""/></a>
-                                </td>                                        
-                                <td class="default">Default</td>
-                            </tr>
-                            @endfor                                      
-                        </tbody>
-                    </table>
+        <form method="post" action="" class="float-label mt-5">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="form-group mb-5">
+                        <label class="form-label">Host Name</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="form-group mb-5">
+                        <label class="form-label">Port</label>
+                        <input type="text" class="form-control"/>
+                    </div>
                 </div>
             </div>
-        </div>             
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="form-group mb-5">
+                        <label class="form-label">Sender Email</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="form-group mb-5">
+                        <label class="form-label">Sender Display Mail</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="form-group mb-5">
+                        <label class="form-label">Connection Security</label>
+                        <select class="form-select form-control">
+                            <option>Select</option>
+                            <option>Select1</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <p class="f-20 ">Authentication Required</p>
+                    <div class="form-group1 d-flex align-items-center ">
+                        <div class="radio-group">
+                            <input type="radio" class="form-check-input" name="auth" id="auth-yes" value="Yes">
+                            <label for="auth-yes">Yes</label>
+                        </div>
+                        <div class="radio-group ms-4">
+                            <input type="radio" class="form-check-input" id="auth-no" name="auth" value="No">
+                            <label for="auth-no">No</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="form-group mb-5">
+                        <label class="form-label">Authentication Email</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="form-group mb-5">
+                        <label class="form-label">Authentication Password</label>
+                        <input type="text" class="form-control"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-4 text-center">
+                    <button type="button" class="btn btn-validate">Vaildate Email</button>
+                </div>
+            </div>
+        </form>                   
     </div>
-</section> 
+</section>  
 @endsection
